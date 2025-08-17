@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Enhanced HTML5 Content & Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background: #fdfdfd;
+      color: #333;
+    }
+
+    header, footer {
+      background-color: #005f73;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1em;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+
+    img, video {
+      max-width: 100%;
+      height: auto;
+      margin: 10px 0;
+    }
+
+    form {
+      background-color: #f4f4f4;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    fieldset {
+      margin-bottom: 20px;
+      border: 1px solid #aaa;
+      padding: 15px;
+    }
+
+    legend {
+      font-weight: bold;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      padding: 10px 15px;
+      background-color: #005f73;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0a9396;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>HTML5 Enhanced Page & Form</h1>
+    <p>Exploring semantic HTML, structured content, and native form validation</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>📋 Features of This Page</h2>
+      <ul>
+        <li>Uses semantic HTML5 elements for accessibility and structure</li>
+        <li>Includes multimedia (images and video)</li>
+        <li>Displays data using a clean and readable table</li>
+        <li>Implements a fully featured HTML5 form with validation</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>📊 Sample Comparison Table</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Description</th>
+            <th>Implemented</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Lists</td>
+            <td>Organize features and content clearly</td>
+            <td>✅</td>
+          </tr>
+          <tr>
+            <td>Media</td>
+            <td>Images and videos enhance user experience</td>
+            <td>✅</td>
+          </tr>
+          <tr>
+            <td>Form Validation</td>
+            <td>HTML5 input types and attributes used</td>
+            <td>✅</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>🎥 Media Content</h2>
+      <h3>image</h3>
+      <img src="8a1a0dbb7bfd4ca8b111666dc6d60d82.jpg" alt="Sample placeholder image" />
+
+      <h3>Video</h3>
+      <video controls>
+        <source src="1c24fe66987645b8893fbd5106be27ab.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <h3>Audio</h3>
+      <audio controls>
+        <source src="Chike-Ft-Simi-Running-To-You-(TrendyBeatz.com).mp3" type="audio/mpeg" />
+        Your browser does not support the audio tag.
+      </audio>
+    </section>
+
+    <section>
+      <h2>📝 Registration Form</h2>
+      <form action="#" method="post" autocomplete="on">
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label for="fullname">Full Name *</label>
+          <input type="text" id="fullname" name="fullname" placeholder="Benson Maina" required autocomplete="name" />
+
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="email" placeholder="Benson@gmail.com" required autocomplete="email" />
+
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="07XXXXXXXX" title="10-digit phone number" />
+
+          <label for="dob">Date of Birth *</label>
+          <input type="date" id="dob" name="dob" required />
+
+          <label for="country">Country *</label>
+          <select id="country" name="country" required>
+            <option value="">-- Select Country --</option>
+            <option value="us">United States</option>
+            <option value="uk">United Kingdom</option>
+            <option value="ca">Canada</option>
+            <option value="in">India</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+
+          <label>Gender *</label>
+          <input type="radio" id="male" name="gender" value="male" required />
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Female</label>
+          <input type="radio" id="other" name="gender" value="other" />
+          <label for="other">Other</label>
+
+          <label>Areas of Interest</label>
+          <input type="checkbox" id="coding" name="interests" value="coding" />
+          <label for="coding">Coding</label>
+          <input type="checkbox" id="design" name="interests" value="design" />
+          <label for="design">Design</label>
+          <input type="checkbox" id="writing" name="interests" value="writing" />
+          <label for="writing">Writing</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Security</legend>
+
+          <label for="password">Create Password *</label>
+          <input type="password" id="password" name="password" minlength="6" required autocomplete="new-password" />
+
+          <label for="referral">Referral Code</label>
+          <input type="text" id="referral" name="referral" value="WELCOME2025" readonly />
+        </fieldset>
+
+        <fieldset>
+          <legend>Additional Info</legend>
+
+          <label for="bio">Short Bio</label>
+          <textarea id="bio" name="bio" rows="4" placeholder="Tell us about yourself..."></textarea>
+
+          <label for="resume">Upload Resume (PDF only) *</label>
+          <input type="file" id="resume" name="resume" accept=".pdf" required />
+        </fieldset>
+
+        <button type="submit">Submit Form</button>
+        <button type="reset">Reset</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; Benson Maina. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
